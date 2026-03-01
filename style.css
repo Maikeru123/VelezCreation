@@ -1,0 +1,207 @@
+
+        /* Light Blue Color Palette */
+        :root {
+            --primary-blue: #0284c7; 
+            --primary-hover: #0369a1; 
+            --bg-light-blue: #f0f9ff; 
+            --hero-gradient-start: #e0f2fe; 
+            --hero-gradient-end: #bae6fd;
+            --text-dark-blue: #0c4a6e; 
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; 
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--text-dark-blue) !important;
+            letter-spacing: -0.5px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
+            color: var(--text-dark-blue);
+            padding: 70px 0 100px 0; 
+            text-align: center;
+            border-bottom: 1px solid #bae6fd;
+        }
+
+        /* Main Showcase Container */
+        .product-container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08); 
+            padding: 40px;
+            margin-top: -60px; 
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Carousel Styling */
+        .carousel-inner {
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: var(--bg-light-blue);
+            border: 1px solid #e0f2fe;
+        }
+        
+        /* IMAGE SIZING FIX: Responsive uniform boxes for screenshots */
+        .toga-img {
+            height: 500px;
+            width: 100%;
+            object-fit: contain; /* Ensures the whole screenshot is visible */
+            background-color: #ffffff; /* Gives it a clean frame if the image is narrow */
+            padding: 15px;
+        }
+
+        /* Mobile adjustment so it doesn't get awkwardly tall */
+        @media (max-width: 768px) {
+            .toga-img {
+                height: 350px; 
+            }
+        }
+
+        .toga-carousel-label {
+            background-color: var(--text-dark-blue);
+            color: #ffffff;
+            padding: 12px 20px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+            border-bottom: 4px solid var(--primary-blue); 
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(12, 74, 110, 0.6);
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        /* Pricing Box */
+        .pricing-box {
+            background-color: var(--bg-light-blue);
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .price-text {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Informational Size Badges */
+        .size-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* Buttons */
+        .btn-facebook {
+            background-color: #1877F2; 
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-facebook:hover {
+            background-color: #166fe5;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+        }
+
+        .btn-phone {
+            background-color: var(--text-dark-blue); 
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-phone:hover {
+            background-color: #08334f;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(12, 74, 110, 0.3);
+        }
+
+        /* How it works section */
+        .step-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            height: 100%;
+            border: 1px solid #e2e8f0;
+        }
+        .step-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* Footer Section */
+        .footer-section {
+            background-color: var(--text-dark-blue);
+            color: #e0f2fe;
+            margin-top: auto;
+        }
+        
+        .footer-section a {
+            color: #bae6fd;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #ffffff;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            height: 250px;
+            background-color: #e2e8f0;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+  
